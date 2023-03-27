@@ -1,6 +1,0 @@
--- Rick's MLC Concussion Mod
-
-IGUI_EN {
-	IGUI_RicksMLC_Ow = "Ow! My head!",
-	IGUI_RicksMLC_Better = "That's better",
-},
