@@ -26,7 +26,7 @@ function ISRadioWindow.update(self)
         end
         -- Dodgy hack: The overridden code checks if it has self.deviceData to turn off the item if it is in the inventory.
         -- So we just temporarily remove the deviceData so it won't trigger the turn off.
-        local holdDeviceData = self.deviceData
+        holdDeviceData = self.deviceData
         self.deviceData = nil
     end
 
@@ -62,9 +62,10 @@ end
 -- Override the ISHotbar remove item so it turn of the radio if it is removed from the hotbar
 Override.ISHotbar_removeItem = ISHotbar.removeItem
 function ISHotbar.removeItem(self, item, doAnim)
-    DebugLog.log(DebugLog.Mod, "Override.ISHotbar_removeItem")
+    --DebugLog.log(DebugLog.Mod, "Override.ISHotbar_removeItem")
     if instanceof(item, "Radio") then
         item:getDeviceData():setIsTurnedOn(false)
     end
+
     Override.ISHotbar_removeItem(self, item, doAnim)
 end
