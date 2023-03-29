@@ -1,7 +1,8 @@
 version=0.1
 title=Rick's MLC Two Way Radio
-description= Two way radio still works on the belt if in Auto mode.
+description= The radio on the belt does not turn off if unequipped from your hands.  This is only for player-to-player communications.
+description= Removing the radio from the belt will turn it off.
 description=
-description= Languages supported:English and (possibly badly translated): Spanish, Korean, Portuguese
+description= Note: You cannot hear commercial radio stations - that is handled in the Java code and I can't get to it from Lua :)
 tags=Build 41
-visibility=public
+visibility=friends

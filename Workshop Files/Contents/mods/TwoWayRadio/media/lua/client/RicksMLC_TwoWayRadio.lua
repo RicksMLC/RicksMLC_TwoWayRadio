@@ -1,6 +1,6 @@
 -- RicksMLC_TwoWayRadio
 
--- Tweak the ISRadioWindow so the radio still works when on the belt.  Putting inside a bag/pack will turn it off.
+-- Tweak the ISRadioWindow so the radio still works when on the belt.  Removing from the belt will turn it off.
 -- The idea comes from "Keep That Radio On", but with less copying of the original code.
 
 require "RadioCom/ISRadioWindow"
