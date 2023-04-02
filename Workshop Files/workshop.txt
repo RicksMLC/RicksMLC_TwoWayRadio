@@ -1,8 +1,9 @@
 version=0.1
 title=Rick's MLC Two Way Radio Stays On
-description= The radio on the belt does not turn off if unequipped from your hands.  This is only for player-to-player communications.
+description= The radio on the belt does not turn off if unequipped from your hands.
+description= This is only for player-to-player VOIP and text chat communications.
 description= Removing the radio from the belt will turn it off.
-description=
+description= 
 description= Note: You cannot hear commercial radio stations - that is handled in the Java code and I can't get to it from Lua :)
 tags=Build 41
 visibility=public

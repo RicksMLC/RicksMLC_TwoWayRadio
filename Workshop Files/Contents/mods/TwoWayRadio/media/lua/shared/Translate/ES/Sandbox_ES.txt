@@ -1,0 +1,15 @@
+-- Rick's MLC TwoWayRadio
+
+Sandbox_ES = {
+	Sandbox_RicksMLC_TwoWayRadio = "Rick's MLC Two Way Radio",
+
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBS = "Hackear mensaje AEBS",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBS_tooltip = "Active esto para hackear el mensaje AEBS de vainilla con el suyo.",
+
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg1 = "Primera línea de mensaje",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg1_tooltip = "Primera línea del mensaje hackeado. Es una buena idea agregar su frecuencia aquí.  Sugiero evitar 88MHz -> 108MHz para evitar el uso de frecuencias de radio vainilla.",
+
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg2 = "Segunda línea de mensaje",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg2_tooltip = "Segunda línea del mensaje hackeado. Es una buena idea repetir la frecuencia para que el receptor pueda verla de nuevo.",
+
+}

@@ -1,0 +1,12 @@
+Sandbox_EN = {
+    Sandbox_RicksMLC_TwoWayRadio = "Rick's MLC Two Way Radio",
+
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBS = "Hack AEBS Message",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBS_tooltip = "Turn this on to hack the vanilla AEBS message with your own.",
+
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg1 = "First Message Line",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg1_tooltip = "First line of the hacked message. It's a good idea to add your frequency here.  I suggest avoiding 88MHz -> 108MHz to prevent using vanilla radio frequencies.",
+
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg2 = "Second Message Line",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg2_tooltip = "Second line of the hacked message. It's a good idea to repeat the frequency so the receiver can see it again.",
+}

@@ -1,0 +1,14 @@
+-- Rick's MLC Concussion
+
+Sandbox_PT = {
+	Sandbox_RicksMLC_TwoWayRadio = "Rick's MLC Two Way Radio",
+	
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBS = "Hackear mensagem AEBS",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBS_tooltip = "Ligue isso para hackear a mensagem AEBS baunilha com a sua.",
+
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg1 = "Primeira linha de mensagem",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg1_tooltip = "Primeira linha da mensagem hackeada. É uma boa ideia adicionar a sua frequência aqui.  Sugiro evitar 88MHz -> 108MHz para evitar o uso de frequências de rádio baunilha.",
+
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg2 = "Segunda linha de mensagem",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg2_tooltip = "Segunda linha da mensagem hackeada. É uma boa ideia repetir a frequência para que o recetor possa vê-la novamente.",
+}
