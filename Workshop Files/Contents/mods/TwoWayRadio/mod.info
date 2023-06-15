@@ -6,4 +6,9 @@ description= This is only for player-to-player VOIP and text chat communications
 description= Removing the radio from the belt will turn it off. <LINE>
 description= <LINE>
 description= Note: You cannot hear commercial radio stations - that is handled in the Java code and I can't get to it from Lua :) <LINE>
+description= <LINE>
+description= This mod has a somewhat hidden feature: We at Rick's Mid Life Crisis Labs have hacked the Automated Emergency Broadcast System (AEBS) so <LINE>
+description= messages can be tacked onto the end of emergency broadcasts.  There is now a sandbox option to enable and set a real-time event for <LINE>
+description= warning: (time, name, and how many hours before the event to start warning) <LINE>
+
 url=
