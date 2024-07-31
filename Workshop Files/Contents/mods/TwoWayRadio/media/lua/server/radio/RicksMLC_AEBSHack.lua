@@ -82,15 +82,19 @@ function RicksMLC_AEBSHack.MakeSheduledEventString(eventScheduledRealTime, numRe
         eventInSeconds = eventInSeconds + tonumber(sSecondNum)
     end
 
+    if eventInSeconds < currentSeconds then
+        eventInSeconds = eventInSeconds + 86400
+    end
+
     local numSecondsBeforeEvent = numRealHoursNotice * 3600
     local triggerMsgTimeSeconds = eventInSeconds - numSecondsBeforeEvent
 
     --DebugLog.log(DebugType.Mod, "RicksMLC_AEBSHack.MakeSheduledEventString() dayLength: " .. tostring(dayLength) .. " dayLengthMinutes(): " .. tostring(getSandboxOptions():getDayLengthMinutes()))
 
-    if currentSeconds > eventInSeconds and currentSeconds < triggerMsgTimeSeconds then
+    if currentSeconds < triggerMsgTimeSeconds then
         --DebugLog.log(DebugType.Mod, "  Too late. CurrentSeconds " .. tostring(currentSeconds) .. " > eventSeconds " .. tostring(eventSeconds))
         return msg
-    end -- too late, try tomorrow :)
+    end
 
     if currentSeconds >= triggerMsgTimeSeconds then
         -- It's time to broadcast message
@@ -163,9 +167,14 @@ function RicksMLC_AEBSHack.Test()
     --        gt from 00:00 is 1 day + 45300 -> 1 Day 12 hours 34 minutes
     cases.case5 = { eventTime = "22:19:00", hoursNotice = 24, realTime = calendar:getTime(), gameTime = GetGameTimeSeconds(13,  0), dayLength = 1, eventName = "Automated System (Tomorrow 12:34) Restart" }
     calendar:set(2023, 6, 1, 22, 34)
-    cases.case6 = { eventTime = "22:10:00", hoursNotice = 24, realTime = calendar:getTime(), gameTime = GetGameTimeSeconds(09, 40), dayLength = 1, eventName = "Automated System (Tomorrow ???) Restart" }
+    cases.case6 = { eventTime = "22:10:00", hoursNotice = 24, realTime = calendar:getTime(), gameTime = GetGameTimeSeconds(09, 40), dayLength = 1, eventName = "Automated System Restart" }
     calendar:set(2023, 6, 1, 22, 38)
-    cases.case7 = { eventTime = "01:00:00", hoursNotice = 24, realTime = calendar:getTime(), gameTime = GetGameTimeSeconds(09, 25), dayLength = 1, eventName = "Automated System (Tomorrow ???) Restart" }
+    cases.case7 = { eventTime = "01:00:00", hoursNotice = 24, realTime = calendar:getTime(), gameTime = GetGameTimeSeconds(09, 25), dayLength = 1, eventName = "Automated System Restart" }
+    calendar:set(2023, 6, 1, 01, 20)
+    cases.case8 = { eventTime = "01:00:00", hoursNotice = 12, realTime = calendar:getTime(), gameTime = GetGameTimeSeconds(09, 25), dayLength = 1, eventName = "Mandatory Brief Curfew" }
+    calendar:set(2023, 6, 1, 13, 10)
+    cases.case9 = { eventTime = "01:00:00", hoursNotice = 12, realTime = calendar:getTime(), gameTime = GetGameTimeSeconds(09, 25), dayLength = 1, eventName = "Mandatory Brief Curfew" }
+
 
     for i, v in pairs(cases) do
         local msg = RicksMLC_AEBSHack.MakeSheduledEventString(v.eventTime, v.hoursNotice, v.realTime, v.gameTime, v.dayLength, v.eventName)

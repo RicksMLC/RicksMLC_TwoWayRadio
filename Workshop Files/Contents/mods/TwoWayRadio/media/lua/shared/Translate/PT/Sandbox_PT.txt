@@ -1,26 +1,8 @@
--- Rick's MLC Concussion
+-- Rick's MLC Template
 
 Sandbox_PT = {
-	Sandbox_RicksMLC_TwoWayRadio = "Rick's MLC Two Way Radio",
-	
-    Sandbox_RicksMLC_TwoWayRadio_HackAEBS = "Hackear mensagem AEBS",
-    Sandbox_RicksMLC_TwoWayRadio_HackAEBS_tooltip = "Ligue isso para hackear a mensagem AEBS baunilha com a sua.",
+    Sandbox_RicksMLC_Template = "Rick's MLC Template",
 
-    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg1 = "Primeira linha de mensagem",
-    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg1_tooltip = "Primeira linha da mensagem hackeada. É uma boa ideia adicionar a sua frequência aqui.  Sugiro evitar 88MHz -> 108MHz para evitar o uso de frequências de rádio baunilha.",
-
-    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg2 = "Segunda linha de mensagem",
-    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg2_tooltip = "Segunda linha da mensagem hackeada. É uma boa ideia repetir a frequência para que o recetor possa vê-la novamente.",
-	
-	Sandbox_RicksMLC_TwoWayRadio_HackAEBSSchedule = "Ativar notificação de evento",
-    Sandbox_RicksMLC_TwoWayRadio_HackAEBSSchedule_tooltip = "Habilite isso para que a AEBS transmita avisos perto do horário do evento",
-
-    Sandbox_RicksMLC_TwoWayRadio_RealTimeScheduledTimeOfDay = "Hora programada do dia (hh:mm:ss)",
-    Sandbox_RicksMLC_TwoWayRadio_RealTimeScheduledTimeOfDay_tooltip = "Hora do dia em tempo real para o evento.  Formato de 24 horas - Deve incluir segundos",
-
-    Sandbox_RicksMLC_TwoWayRadio_RealTimeScheduledEvent = "Nome do evento",
-    Sandbox_RicksMLC_TwoWayRadio_RealTimeScheduledEvent_tooltip = "Nome do evento a ser exibido na transmissão da AEBS",
-
-    Sandbox_RicksMLC_TwoWayRadio_RealTimeHoursBefore = "Aviso prévio em tempo real",
-    Sandbox_RicksMLC_TwoWayRadio_RealTimeHoursBefore_tooltip = "Quantas horas em tempo real antes do aviso é incluído no AEBS",
+    Sandbox_RicksMLC_Template_On = "Is this on?",
+    Sandbox_RicksMLC_Template_On_tooltip = "Just an example template tooltip",
 }

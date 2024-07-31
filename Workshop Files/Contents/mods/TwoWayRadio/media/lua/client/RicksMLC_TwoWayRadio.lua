@@ -59,7 +59,7 @@ function ISHotbar.render(self)
     end
 end
 
--- Override the ISHotbar remove item so it turn of the radio if it is removed from the hotbar
+-- Override the ISHotbar remove item so it turn off the radio if it is removed from the hotbar
 Override.ISHotbar_removeItem = ISHotbar.removeItem
 function ISHotbar.removeItem(self, item, doAnim)
     --DebugLog.log(DebugLog.Mod, "Override.ISHotbar_removeItem")
