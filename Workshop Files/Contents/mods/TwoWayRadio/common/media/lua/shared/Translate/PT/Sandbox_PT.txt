@@ -1,0 +1,8 @@
+-- Rick's MLC Template
+
+Sandbox_PT = {
+    Sandbox_RicksMLC_Template = "Rick's MLC Template",
+
+    Sandbox_RicksMLC_Template_On = "Is this on?",
+    Sandbox_RicksMLC_Template_On_tooltip = "Just an example template tooltip",
+}

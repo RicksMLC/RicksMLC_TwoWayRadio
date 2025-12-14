@@ -1,0 +1,27 @@
+-- Rick's MLC Two Way Radio
+-- Chinese Simplified Translation - UTF-8
+
+Sandbox_CN = {
+	Sandbox_RicksMLC_TwoWayRadio = "Rick's MLC Two Way Radio",
+
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBS = "黑客 AEBS 消息",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBS_tooltip = "打开此功能以使用您自己的消息破解原版AEBS消息。",
+
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg1 = "第一条消息行",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg1_tooltip = "被黑邮件的第一行。最好在此处添加您的频率。 我建议避免使用88MHz -> 108MHz，以防止使用普通无线电频率。",
+
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg2 = "第二条消息行",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSMsg2_tooltip = "被黑邮件的第二行。最好重复频率，以便接收器可以再次看到它。",
+	
+	Sandbox_RicksMLC_TwoWayRadio_HackAEBSSchedule = "启用事件通知",
+    Sandbox_RicksMLC_TwoWayRadio_HackAEBSSchedule_tooltip = "启用此选项，以便 AEBS 将在接近事件时间时广播警告",
+
+    Sandbox_RicksMLC_TwoWayRadio_RealTimeScheduledTimeOfDay = "一天中的计划时间 (hh:mm:ss)",
+    Sandbox_RicksMLC_TwoWayRadio_RealTimeScheduledTimeOfDay_tooltip = "事件的实时时间。 24 小时格式 - 必须包括秒",
+
+    Sandbox_RicksMLC_TwoWayRadio_RealTimeScheduledEvent = "事件名称",
+    Sandbox_RicksMLC_TwoWayRadio_RealTimeScheduledEvent_tooltip = "要在 AEBS 广播中显示的事件的名称",
+
+    Sandbox_RicksMLC_TwoWayRadio_RealTimeHoursBefore = "实时小时通知",
+    Sandbox_RicksMLC_TwoWayRadio_RealTimeHoursBefore_tooltip = "在警告包含在 AEBS 中之前的实时小时数",
+}

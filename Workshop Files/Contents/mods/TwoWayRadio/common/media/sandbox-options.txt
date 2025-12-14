@@ -1,0 +1,59 @@
+VERSION = 1,
+
+option RicksMLC_TwoWayRadio.HackAEBS
+{
+	type = boolean,
+	default = false,
+	page = RicksMLC_TwoWayRadio,
+	translation = RicksMLC_TwoWayRadio_HackAEBS,
+}
+
+option RicksMLC_TwoWayRadio.HackAEBSMsg1
+{
+    type = string,
+    default = "Ah... Any survivors out there.  Tune your radio to 87.4 MHz.  I can help.",
+    page = RicksMLC_TwoWayRadio,
+    translation = RicksMLC_TwoWayRadio_HackAEBSMsg1,
+}
+
+option RicksMLC_TwoWayRadio.HackAEBSMsg2
+{
+    type = string,
+    default = "I repeat: Tune your radio to 87.4 MHz. Umm... I guess that is it.  Out.",
+    page = RicksMLC_TwoWayRadio,
+    translation = RicksMLC_TwoWayRadio_HackAEBSMsg2,
+}
+
+option RicksMLC_TwoWayRadio.HackAEBSSchedule
+{
+	type = boolean,
+	default = false,
+	page = RicksMLC_TwoWayRadio,
+	translation = RicksMLC_TwoWayRadio_HackAEBSSchedule,
+}
+
+option RicksMLC_TwoWayRadio.RealTimeScheduledTimeOfDay
+{
+    type = string,
+    default = "00:00:00",
+    page = RicksMLC_TwoWayRadio,
+    translation = RicksMLC_TwoWayRadio_RealTimeScheduledTimeOfDay,
+}
+
+option RicksMLC_TwoWayRadio.RealTimeScheduledEvent
+{
+    type = string,
+    default = "",
+    page = RicksMLC_TwoWayRadio,
+    translation = RicksMLC_TwoWayRadio_RealTimeScheduledEvent,
+}
+
+option RicksMLC_TwoWayRadio.RealTimeHoursBefore
+{
+    type = integer,
+	default = 2,
+	min = 1,
+	max = 24,
+    page = RicksMLC_TwoWayRadio,
+    translation = RicksMLC_TwoWayRadio_RealTimeHoursBefore,
+}
